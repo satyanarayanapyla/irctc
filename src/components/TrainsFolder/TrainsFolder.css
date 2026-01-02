@@ -1,0 +1,179 @@
+/* Reset & font */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.trains-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.trains-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.search-box input {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  min-width: 150px;
+  transition: border 0.3s;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #6c5ce7;
+  box-shadow: 0 0 5px rgba(108, 92, 231, 0.4);
+}
+
+.search-btn {
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  background: #6c5ce7;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.search-btn:hover {
+  background: #5a4cd3;
+  transform: translateY(-2px);
+}
+
+/* Train List */
+.train-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Train Card */
+.train-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.train-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.train-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.train-number {
+  font-weight: 600;
+  color: #6c5ce7;
+}
+
+.route {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.timing {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+/* Classes */
+.classes {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.class-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+  min-width: 60px;
+}
+
+.class-name {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+.available {
+  color: #00b894;
+  font-weight: 600;
+}
+
+.waiting {
+  color: #d63031;
+  font-weight: 600;
+}
+
+/* Book button */
+.book-btn {
+  width: 100%;
+  padding: 0.6rem 0;
+  border-radius: 8px;
+  border: none;
+  background: #6c5ce7;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+  background: #5a4cd3;
+  transform: translateY(-2px);
+}
+
+/* No data */
+.no-data {
+  text-align: center;
+  color: #d63031;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .search-box {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .classes {
+    justify-content: flex-start;
+  }
+}

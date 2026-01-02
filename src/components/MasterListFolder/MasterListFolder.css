@@ -1,0 +1,118 @@
+/* Page background */
+.master-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  padding: 30px;
+}
+
+/* Container */
+.master-container {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.master-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.master-subtitle {
+  margin-top: 6px;
+  margin-bottom: 25px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* Table */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.master-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.master-table th {
+  background: #1e40af;
+  color: #ffffff;
+  padding: 14px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.master-table td {
+  padding: 14px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #334155;
+}
+
+/* Row hover */
+.master-table tbody tr:hover {
+  background: #f1f5ff;
+}
+
+/* Status badge */
+.status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status.active {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status.inactive {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* Buttons */
+.view-btn,
+.edit-btn {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-right: 6px;
+  transition: all 0.3s ease;
+}
+
+.view-btn {
+  background: #e0e7ff;
+  color: #1e40af;
+}
+
+.view-btn:hover {
+  background: #c7d2fe;
+}
+
+.edit-btn {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.edit-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .master-title {
+    font-size: 22px;
+  }
+
+  .master-table th,
+  .master-table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+}
